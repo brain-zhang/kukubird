@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<meta charset="utf-8">
+		<link rel="stylesheet" href="js/jquery.mobile-1.1.0/jquery.mobile-1.1.0.min.css" />
+		<script src="js/jquery.mobile-1.1.0/jquery-1.6.4.min.js"></script>  
+		<script src="js/jquery.mobile-1.1.0/jquery.mobile-1.1.0.min.js"></script>
+</head> 
+<body>
+<!-- About -->
+<div data-role="page" id="about">
+	<div data-role="header" data-id="headerbar" data-position="fixed">
+		<h1>库库鸟看漫画</h1>
+		<div data-role="navbar" data-theme="e">
+			<ul>
+				<li><a href="#index"  data-icon="home" data-iconpos="top" data-theme="a" data-prefetch="true">热门漫画</a></li>
+				<li><a href="categories.html" data-icon="grid" data-iconpos="top" data-theme="a" data-prefetch="true">分类浏览</a></li>
+				<li><a href="user.html"  data-icon="custom" data-iconpos="top" data-theme="a" data-prefetch="true">我的空间</a></li>
+				<li><a href="about.html"  data-icon="info" data-iconpos="top" data-theme="a" data-prefetch="true" class="ui-btn-active ui-state-persist">关于</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+
+	<div data-role="content">	
+			<div class="ui-body ui-body-c" data-iscroll="scroller">
+				<h3>起因：</h3>
+    				<ul>
+    				    <li>喜爱看漫画，但是无奈各大漫画站上的广告实在是太多了，木有办法只好自己搞一个了。</li>
+    				</ul>
+                <h3>支持的平台：</h3>
+                    <ul>
+                        <li>基于HTML5平台，理论上支持所有的主流浏览器、各种Pad、iPhone、Android手机。
+                        </li>
+                    </ul>
+                <h3>使用方法：</h3>
+                <ul>
+                    <li>
+                        直接在浏览器上打开http://kukubird.sinaapp.com.，然后选择你中意的漫画就可以开始看了。(iOS系统)当然也可以添加到主屏幕上来快速启动，这样就可以全屏浏览了。（强烈建议！）
+                        <br />
+                        <img src="images/how_to_add_screen.png">
+                    </li>
+                    <li>
+                        当然我们也是支持搜索的，在主页上有搜索框（请狂击键盘)
+                        <br />
+                        <img src="images/how_to_search.png">
+                    </li>
+                    <li>在你看漫画的时候如果觉得顶部的标题栏碍眼，可以轻击屏幕空白处就自动隐藏了</li>
+                    <li>在平板上支持手指滑动操作，在PC上支持键盘左右键操作，总之是尽量做到操作简便。</li>
+                    <li>如果你连动动手指都不愿意的话，我们也为你提供了自动翻页功能。</li>
+                    <li>现在还存在着这样那样的问题，翻页的时候还是有比较大的延迟，我们会努力解决的。</li>     
+                </ul>      
+                <span>微博：</span><a href="http://weibo.com/kkbird">@库库鸟</a><br /><br />
+                
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                    var disqus_shortname = 'kukubird'; // required: replace example with your forum shortname
+                    var disqus_identifier = 'http://kukubird.sinaapp.com';
+                
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div><!-- /themed container -->
+	</div><!-- /content -->
+
+</div><!-- /page -->
+</body>
+</html>

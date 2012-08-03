@@ -1,0 +1,98 @@
+<!--
+manifest="cache.manifest"
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>库库鸟看漫画</title>
+	<meta name="author" content="memoryboxes@163.com">
+	<meta name="keywords" content="ipad, iphone, Android, 平板电脑, 漫画, 移动"> 
+	<!--全屏启动 for IOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    
+    <!--图标画面for IOS-->
+    <link rel="apple-touch-icon" href="iosimages/apple-touch-icon-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="iosimages/touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="iosimages/touch-icon-iphone4.png" />   
+    
+    <!--loading画面for IOS-->
+    <link rel="apple-touch-startup-image" href="iosimages/startup_iphone.png">
+    
+    <!--地址栏图标for IOS-->
+    <link rel="icon" href="icon/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon" />    
+    
+    <!--默认不缩放for IOS-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <link rel="stylesheet" href="comicpages.css">
+	<link rel="stylesheet" href="js/jquery.mobile-1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="js/jquery.mobile-1.1.0/jquery-1.6.4.min.js"></script>   
+	<script type="text/javascript">
+    $(document).bind("mobileinit", function(){
+    	$.mobile.defaultPageTransition = 'none'
+    	$.mobile.loadingMessage = '努力加载中...'
+    	$.mobile.page.prototype.options.backBtnText = '后退'
+        $.mobile.page.prototype.options.addBackBtn= false
+        $.mobile.selectmenu.prototype.options.nativeMenu = false;
+        
+        $.mobile.touchOverflowEnabled = true;
+        
+        var ua = navigator.userAgent.toLowerCase()
+        if(ua.match(/iPad/i)=='ipad') {
+            $('link[rel=apple-touch-startup-image]').attr('href','iosimages/startup_ipad.png')
+        }
+    });
+	</script>  
+	<script src="js/jquery.mobile-1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	
+	<script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-31017340-1']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+    </script>
+</head> 
+
+<body>
+<!-- index -->
+<div data-role="page" id="index">
+	<div data-role="header" data-id="headerbar" data-position="fixed">
+		<h1>库库鸟看漫画</h1>		
+		<div data-role="navbar" data-theme="e">
+			<ul>
+				<li><a href="#index" data-icon="home" data-iconpos="top" data-theme="e" data-prefetch="true" class="ui-btn-active ui-state-persist">热门漫画</a></li>
+				<li><a href="categories.html" data-icon="grid" data-iconpos="top"  data-theme="e" data-prefetch="true">分类浏览</a></li>
+				<li><a href="user.html"  data-icon="custom" data-iconpos="top" data-theme="e" data-prefetch="true">我的空间</a></li>
+				<li><a href="about.html" data-icon="info" data-iconpos="top" data-theme="e" data-prefetch="true">关于</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<div class="content-primary">
+		    <div data-role="fieldcontain" class="ui-hide-label">
+                <label for="search">搜索全站</label>
+                <input name="search" id="SearchByAkaname" placeholder="整站搜索" value="" />
+            </div>
+			<ul data-role="listview" data-inset="true" data-filter="false">
+			</ul>
+			<div id="indexpagebtn">
+
+			</div>
+		</div>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<script type="text/javascript" src="js/preloadimagev2.min.js"></script>
+<script type="text/javascript" src="js/kukubird.core.min.js"></script>
+<script type="text/javascript" src="js/kukubird.app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<meta charset="utf-8">
+</head> 
+<body>
+<!-- Comic view Page -->
+<div id="comicpages" data-role="page" data-fullscreen="true">
+    <div data-role="header" data-position="fixed">
+        <!--<a href="#index" data-icon="home">首页</a>-->
+        <div data-role="navbar" data-theme="e">
+            <ul>
+                <li><a href="comic.html"  data-icon="back">返回</a></li>
+                <li>    
+                    <a id="AutoTurnPage" href="#" data-role="button" data-icon="top">自动翻页(默认10秒)</a>
+                </li>
+                <li><a href="#index"  data-icon="home" data-inline="true">主页</a></li>
+            </ul>            
+        </div><!-- /navbar -->
+    </div><!-- /header -->
+
+    <div data-role="content">  
+        <div class="content-primary">   
+            <div id="comic_slider">
+                <div id="currcomicpage" class="shadow">
+                </div>
+            </div>
+        </div>
+        
+        <div id ="loading">
+        </div>
+        
+		<div>
+                <a href="#"  id="btn_page_next"></a>                
+                <a href="#"  id="btn_page_prev"></a>
+        </div>
+    </div><!-- /content -->
+    
+    <div data-role="footer" data-position="fixed">
+        <div align="center">
+            <label>PC浏览请按左右方向键翻页</label>
+            &nbsp;&nbsp;&nbsp;
+            <label>移动设备请轻点左右区域翻页</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label id="labelvolno">第N卷</label>
+            <label id="labeltotalpageno">共N页</label>
+            <label id="labelpageno">第1页</label>
+        </div>
+    </div>
+</div><!-- /page -->
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<meta charset="utf-8">
+</head> 
+<body>
+<!-- Comic Vols Page -->
+<div  id="comic" data-role="page" data-iscroll="enable">
+    <div data-role="header" data-id="headerbar" data-position="fixed">
+        <!--<a href="#index" data-icon="home">首页</a>-->
+        <h1>库库鸟看漫画</h1>       
+        <div data-role="navbar" data-theme="e">
+            <ul>
+                <li><a href="#index" data-icon="home" data-iconpos="top"  data-theme="a" data-prefetch="true">热门漫画</a></li>
+                <li><a href="categories.html" data-icon="grid" data-iconpos="top"  data-theme="a" data-prefetch="true">分类浏览</a></li>
+                <li><a href="user.html"  data-icon="custom" data-iconpos="top" data-theme="a" data-prefetch="true">我的空间</a></li>
+                <li><a href="about.html"  data-icon="info" data-iconpos="top" data-theme="a" data-prefetch="true">关于</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <div class="content-primary">   
+                <a href="#" id="reversesort" data-role="button" data-theme="b">倒序排列</a>
+                <br />
+                <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="直达电梯(请输入卷/话数)">
+                </ul>
+        </div>
+    </div><!-- /content -->
+</div><!-- /page -->
+</body>
+</html>

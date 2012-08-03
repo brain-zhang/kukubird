@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style type="text/css">
+            body {
+                background: #EEE;
+                font: 14px/1.5 Trebuchet MS, Arial, Helvetica, sans-serif;
+                text-align: center;
+                margin-top: 50px;
+            }
+            .content {
+                background: #FFF;
+                width: 600px;
+                border: 3px solid #CCC;
+                border-radius: 5px;
+                padding: 10px 20px;
+                margin: auto;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <h2>URL自动生成系统</h2>
+            <form method="GET" action="/autocreateurl">
+                <h3>漫画名称</h3>
+                    <input type="text" name="comic_aka_name">
+                </ br>
+                <h3>地址:example:http://www.imanhua.com123/23/(*3).png</h3>
+                <h3>会生成:http://www.imanhua.com123/23/001.png</h3>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.imanhua.com123/23/002.png</h3>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.imanhua.com123/23/003.png</h3>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</h3>
+                    <input type="text" name="comicurl" style="width:500px">
+                <h3>第?卷:(如果不是卷，请填-1)<h3>
+                    <input type="text" name="vol">
+                <h3>第?话:(如果不是话，请填-1)</h3>
+                <input type="text" name="capture">
+                <h3>开始页数(0/1):</h3>
+                <input type="text" name="beginpageno">  
+                <h3>共?页:</h3>
+                <input type="text" name="totalpages">      
+                <h3>卷/话名称:</h3>
+                <input type="text" name="volcapturename">                             
+                </ br>
+                <h3>填写完毕</h3>
+                <input type="submit" value="开始生成">
+            </form>
+        </div>
+    </body>
+</html>

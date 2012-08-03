@@ -1,0 +1,203 @@
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+{for(var i in items){ ---> var  <--- item=items[i];poto=item
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+){summary=item.summary;} ---> var  <--- aka_name=item.aka_name==null?"":
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+{for(var i in items){ ---> var  <--- type=items[i].type;var 
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+type=items[i].type; ---> var  <--- li="";if(items[i]
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+ in items[i].comics){ ---> var  <--- poto=items[i].comics[comic
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+].comics[comic].first_photo; ---> var  <--- summary="暂无";if(items[i]
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+.comics[comic].summary;} ---> var  <--- aka_name=items[i].comics[comic
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+(utils.getParam("index_total_page_num")){ ---> var  <--- index_total_page_num=parseInt(utils.getParam("index_total_page_num")
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+(utils.getParam("index_curr_page_no")); ---> var  <--- index_total_page_num=parseInt(utils.getParam("index_total_page_num")
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+tplHotComics(li_array,data.comics); ---> var  <--- $listview=$("#index").find('ul[data-role="listview"]'
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+index_total_page_num.toString()+"<span>"); ---> var  <--- $btnview=$("#indexpagebtn");$btnview.undelegate
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+index.pageshow();}else{ ---> var  <--- li_array=['<li data-role="list-divider">搜索结果</li>'];var items=[
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+else{var li_array=['<li data-role="list-divider">搜索结果</li>']; ---> var  <--- items=[];var all_comics=utils.
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+'<li data-role="list-divider">搜索结果</li>'];var items=[]; ---> var  <--- all_comics=utils.string2Object(utils.getParam(
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+.getParam("all_comics"));for( ---> var  <--- i=0,length=utils.getPropertyCount(
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+}}tplHotComics(li_array,items); ---> var  <--- $listview=$("#index").find('ul[data-role="listview"]'
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+[];listid=0;for( ---> var  <--- i=0;i<vols;i++
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+if(min_capture>0){for( ---> var  <--- i=min_capture;i<=max_capture;i++
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] The variable i has already been declared in the same scope...
+(min_capture>0){for(var  ---> i <--- =min_capture;i<=max_capture;i++)
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+if(min_capture>0){for( ---> var  <--- i=max_capture;i>=min_capture;i--
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] The variable i has already been declared in the same scope...
+(min_capture>0){for(var  ---> i <--- =max_capture;i>=min_capture;i--)
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+);listid++;}}for( ---> var  <--- i=vols;i>0;i--
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] The variable i has already been declared in the same scope...
+;listid++;}}for(var  ---> i <--- =vols;i>0;i--)
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+,utils.object2String(listid_array)); ---> var  <--- $listview=$("#comic").find('ul[data-role="listview"]'
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+comic_id=utils.getParam("comic_id"); ---> var  <--- vol_no=utils.getParam("vol_no");var 
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+vol_no=utils.getParam("vol_no"); ---> var  <--- capture_no=utils.getParam("capture_no");$
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+}else{var li_array=[]; ---> var  <--- comics_group=utils.string2Object(utils.getParam(
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+);tplComicsGroup(li_array,comics_group); ---> var  <--- $listview=$("#categories").find('ul[data-role="listview"]'
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+{var li_array=[];for( ---> var  <--- i=0,max=histories.length;
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] Try to use a single 'var' statement per scope.
+);}returntrue;}}; ---> var  <--- pages=[{id:"comic",event:
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] The symbol index_total_page_num is declared but is apparently never used.
+This code can probably be written in a more compact way.
+utils.getParam("index_total_page_num")){var  ---> index_total_page_num <--- =parseInt(utils.getParam("index_total_page_num"))
+
+[FILE] U:\code\3\js\kukubird.app.js
+[WARNING] The symbol vol_no is declared but is apparently never used.
+This code can probably be written in a more compact way.
+);});});var  ---> vol_no <--- =utils.getParam("vol_no");}}
+
+[FILE] U:\code\3\js\kukubird.core.js
+[WARNING] Try to use a single 'var' statement per scope.
+utils.getStorageParam("user_history"));} ---> var  <--- now=new Date().format("MM-dd hh:mm"
+
+[FILE] U:\code\3\js\kukubird.core.js
+[WARNING] Try to use a single 'var' statement per scope.
+obj){output+="{";for( ---> var  <--- i in obj){val=obj[i
+
+[FILE] U:\code\3\js\kukubird.core.js
+[WARNING] Try to use a single 'var' statement per scope.
+array){output+="[";for( ---> var  <--- i in array){val=array[i
+
+[FILE] U:\code\3\js\kukubird.core.js
+[WARNING] Using 'eval' is not recommended. Moreover, using 'eval' reduces the level of compression!
+},string2Object:function(string){ ---> eval <--- ("var result = "+decodeURI(string));return
+
+[FILE] U:\code\3\js\kukubird.core.js
+[WARNING] Using 'eval' is not recommended. Moreover, using 'eval' reduces the level of compression!
+},string2Array:function(string){ ---> eval <--- ("var result = "+decodeURI(string));return
+
+[FILE] U:\code\3\js\kukubird.core.js
+[WARNING] The variable pages has already been declared in the same scope...
+.run=function(pages){var  ---> pages <--- =pages,count=pages.length;for
+
+[FILE] U:\code\3\js\kukubird.core.js
+[WARNING] Try to use a single 'var' statement per scope.
+,count=pages.length;for( ---> var  <--- i=0;i<count;i++
+
+[FILE] U:\code\3\js\kukubird.core.js
+[WARNING] Try to use a single 'var' statement per scope.
+;i<count;i++){ ---> var  <--- page=pages[i],id=page
+
+[FILE] U:\code\3\js\kukubird.core.js
+[WARNING] Try to use a single 'var' statement per scope.
+event.split(",");for( ---> var  <--- j=0;j<e_array.length;
+
+[FILE] U:\code\3\js\kukubird.core.js
+[WARNING] Try to use a single 'var' statement per scope.
+<e_array.length;j++){ ---> var  <--- e=e_array[j];if($
+
+[FILE] U:\code\3\js\kukubird.core.js
+[WARNING] Try to use a single 'var' statement per scope.
+$1.length));}for( ---> var  <--- k in o){if(new RegExp(
+
+[FILE] U:\code\3\js\preloadimagev2.js
+[WARNING] Try to use a single 'var' statement per scope.
+}var urllist_queue=new Array(); ---> var  <--- pre_load_img_num=0;var curr_page_no=-1;
+
+[FILE] U:\code\3\js\preloadimagev2.js
+[WARNING] Try to use a single 'var' statement per scope.
+Array();var pre_load_img_num=0; ---> var  <--- curr_page_no=-1;var b_auto_turn_page=false;
+
+[FILE] U:\code\3\js\preloadimagev2.js
+[WARNING] Try to use a single 'var' statement per scope.
+=0;var curr_page_no=-1; ---> var  <--- b_auto_turn_page=false;var pre_load_img_num_weight=1;var 
+
+[FILE] U:\code\3\js\preloadimagev2.js
+[WARNING] Try to use a single 'var' statement per scope.
+=-1;var b_auto_turn_page=false; ---> var  <--- pre_load_img_num_weight=1;var pre_load_img_num_limit=6;function
+
+[FILE] U:\code\3\js\preloadimagev2.js
+[WARNING] Try to use a single 'var' statement per scope.
+b_auto_turn_page=false;var pre_load_img_num_weight=1; ---> var  <--- pre_load_img_num_limit=6;functionpreloadInit(){urllist_queue
+
+[FILE] U:\code\3\js\preloadimagev2.js
+[WARNING] Try to use a single 'var' statement per scope.
+;i<max;i++){ ---> var  <--- img=new Image();img.src
+
+[FILE] U:\code\3\js\preloadimagev2.js
+[WARNING] The symbol pre_load_img_num_weight is declared but is apparently never used.
+This code can probably be written in a more compact way.
+-1;var b_auto_turn_page=false;var  ---> pre_load_img_num_weight <--- =1;var pre_load_img_num_limit=6;functionpreloadInit
+

@@ -1,0 +1,37 @@
+.shadow {float:left;}
+.frame {position:relative; background:#FFF; padding:8px; display:block;
+-moz-box-shadow: 3px 3px 10px rgba(1, 0, 0, 0.6);
+-webkit-box-shadow: 3px 3px 10px rgba(1, 0, 0, 0.6);
+box-shadow: 3px 3px 10px rgba(1, 0, 0, 0.6);
+}
+.clear {clear:left;}
+#comicpages{
+    background-image:url(images/bg.jpg);
+}
+#btn_page_next {
+/*    background: url("http://img2.tuita.cc/a1/t/bc/9c/37942620-1827438.gif") no-repeat scroll center bottom transparent;*/
+    cursor: pointer;
+    display: block;
+    min-height: 90%;
+    padding-top: 50px;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    width: 15%;
+    z-index: 10;
+  }
+
+#btn_page_prev {
+/* 	background: url("http://img2.tuita.cc/a1/t/bc/9c/37942620-1827438.gif") no-repeat scroll center bottom transparent; */
+    cursor: pointer;
+    display: block;
+    left: 0;
+    min-height: 90%;
+    padding-top: 50px;
+    position: fixed;
+    top: 50px;
+    width: 15%;
+    z-index: 10;
+
+}
+
