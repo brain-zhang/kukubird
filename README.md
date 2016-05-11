@@ -9,7 +9,7 @@ This project was created and lead by memorybox <memoryboxes@gmail.com>.
 About kukubird
 ----------------
 
-python + webpy + jquery mobile搭建的看漫画小站。 目前运行在sae上。
+python + webpy + jquery mobile搭建的看漫画小站。 目前运行在sae上 (因为新浪SAE策略调整，正在迁移中，填坑中)。
 
 http://kukubird.sinaapp.com
 
